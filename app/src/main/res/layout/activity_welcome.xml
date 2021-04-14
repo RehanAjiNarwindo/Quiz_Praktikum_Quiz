@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/tv_perpus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="PERPUS AMIKOM"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Email Anda"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableTint="@color/teal_700"
+        android:drawablePadding="10dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="15dp"
+        />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password Anda"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawableTint="@color/teal_700"
+        android:drawablePadding="10dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        app:cornerRadius="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp" />
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Daftar"
+        />
+    <TextView
+        android:id="@+id/tv_forgot_passowrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Lupa Password"
+        />
+
+
+</LinearLayout>

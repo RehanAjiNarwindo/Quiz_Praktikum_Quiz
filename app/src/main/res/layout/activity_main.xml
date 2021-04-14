@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/qhite"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/teal_700"
+        android:text="Selamat Datang, User"
+        android:textColorHint="@color/teal_700"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Judul Buku"/>
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="0dp"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Masukkan Judul Buku" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pengarang Buku"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nim"
+            android:layout_width="0dp"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="5"
+            android:hint="Masukkan Nama Pengarang" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Kebutuhan"/>
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
+                android:textColorHint="@color/teal_700"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Peminjaman"/>
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="0dp"
+                android:textColor="@color/teal_700"
+                android:textColorHint="@color/teal_700"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Pengembalian"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        app:cornerRadius="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp" />
+
+</LinearLayout>
